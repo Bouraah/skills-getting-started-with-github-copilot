@@ -20,6 +20,8 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
           "static")), name="static")
 
 # In-memory activity database
+# In-memory activity database
+# In-memory activity database
 activities = {
     "Chess Club": {
         "description": "Learn strategies and compete in chess tournaments",
@@ -38,6 +40,25 @@ activities = {
         "schedule": "Mondays, Wednesdays, Fridays, 2:00 PM - 3:00 PM",
         "max_participants": 30,
         "participants": ["john@mergington.edu", "olivia@mergington.edu"]
+    },
+    # Diese zusätzlichen Aktivitäten braucht der Bot:
+    "Basketball": {
+        "description": "Team sports and fitness",
+        "schedule": "Mondays, 4:00 PM - 5:00 PM",
+        "max_participants": 15,
+        "participants": []
+    },
+    "Painting": {
+        "description": "Creative arts and expression",
+        "schedule": "Wednesdays, 3:00 PM - 4:30 PM",
+        "max_participants": 10,
+        "participants": []
+    },
+    "Debate Club": {
+        "description": "Intellectual discussion and logic",
+        "schedule": "Thursdays, 3:30 PM - 5:00 PM",
+        "max_participants": 12,
+        "participants": []
     }
 }
 
